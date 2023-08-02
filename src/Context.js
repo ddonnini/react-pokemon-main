@@ -10,7 +10,7 @@ const ContextProvider = ({ children }) => {
 
   const toggleFavorite = (id) => {
     const updatedArr = items.map((item) => {
-      if (item.char_id === id) {
+      if (item.id === id) {
         return { ...item, isFavorite: !item.isFavorite };
       }
       return item;

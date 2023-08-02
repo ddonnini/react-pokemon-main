@@ -10,10 +10,10 @@ const Favorite = () => {
 
   return favorited.length > 0 ? (
     <div className="fav-container">
-      <h1 className="favorite-text">These are your favorite characters</h1>
+      <h1 className="favorite-text">These are your favorite Pokemon</h1>
       <section className="cards">
         {favorited.map((item) => (
-          <CharacterItem key={item.char_id} item={item}></CharacterItem>
+          <CharacterItem key={item.name} item={item}></CharacterItem>
         ))}
       </section>
       <Link to="/">
@@ -23,7 +23,7 @@ const Favorite = () => {
   ) : (
     <div className="empty-favorite">
       <h2 className="favorite-text">
-        You don't have any favorite character yet!{" "}
+        You don't have any favorite Pokemon yet!{" "}
       </h2>
       <Link to="/">
         <button

@@ -22,7 +22,7 @@ const Header = () => {
           onClick={() => setButtonClicked(true)}
           style={{ display: `${displayButton}` }}
         >
-          Favorite Characters
+          Favorite Pokemon
         </button>
       </Link>
     </header>
